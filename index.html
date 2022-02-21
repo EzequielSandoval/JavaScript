@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/3ef02698ac.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="justify-content-center collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#planes">Planes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#beneficios">Beneficios</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mas
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li class="testFocus"><a class="dropdown-item" href="#wordpress">WordPress</a></li>
+                                    <li class="testFocus"><a class="dropdown-item" href="#dominios">Dominio</a></li>
+                                    <li class="testFocus"><a class="dropdown-item" href="#faq">Preguntas Frecuentes</a>
+                                    </li>
+                                    <li class="testFocus"><a class="dropdown-item" href="#contacto">Contacto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="portada">
+            <div class="portada-text-img">
+                <div class="portadaText">
+                    <h1>Servicio de Web Hosting</h1>
+                    <h2>Lo que tu e-commerce merece</h2>
+                    <h4>Desde:</h4>
+                    <div class="valor">
+                        <span class="numEntero">$149</span>
+                        <span class="numDecimal">00</span>
+                        <span class="mes"> /mes </span>
+                    </div>
+                    <h4>Pesos Argentinos</h4>
+                </div>
+                <div class="portadaImg">
+                    <img  src="img/portada/server-portada.svg" alt="">
+                </div>
+            </div>
+            <div class="waveContenedor">
+                <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#FFFFFF" fill-opacity="1.0"
+                        d="M0,192L48,197.3C96,203,192,213,288,224C384,235,480,245,576,240C672,235,768,213,864,224C960,235,1056,277,1152,277.3C1248,277,1344,235,1392,213.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                    </path>
+                </svg>
+            </div>
+        </section>
+        <section id="planes" class="planes">
+            <div class="planesTitle">
+                <h3>Elije el plan de hosting que mas se ajuste a tu sitio</h3>
+            </div>
+            <div data-aos="fade-up"
+            data-aos-duration="1000" class="tarjetasPlanes">
+                <div class="card-group">
+                    <div class="card cardLite">
+                        <div class="cardHeader">
+                            <h3>Lite</h3>
+                            <h6>Para tu web personal</h6>
+                            <div class="precio precio1">
+                                <div class="valor">
+                                    <span class="numEntero">$149</span>
+                                    <span class="numDecimal">00</span>
+                                    <span class="mes"> /mes </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="cardDescrip">
+                                <li><i class="fas fa-check-circle"></i><span>5GB</span> de almacenamiento SSD</li>
+                                <li><i class="fas fa-check-circle"></i><span>1</span> Base de datos</li>
+                                <li><i class="fas fa-check-circle"></i>Ancho de banda sin medicion</li>
+                                <li><i class="fas fa-check-circle"></i><span>WordPress</span> a un click</li>
+                                <li><i class="fas fa-check-circle"></i>Optimizado para <span>WordPress</span></li>
+                                <li><i class="fas fa-check-circle"></i>Certificado <span>SSL</span></li>
+                                <li><i class="fas fa-times-circle"></i>Cuentas de correo</li>
+                                <li><i class="fas fa-times-circle"></i>Construcctor de sitio</li>
+                                <li><i class="fas fa-times-circle"></i><span>Dominio</span></li>
+                            </ul>
+                        </div>
+                        <div class="cardFooter">
+                            <button id="btnPlanLite" class="btn btn-success">Obtener</button>
+
+
+                        </div>
+                    </div>
+                    <div class="card cardPlus">
+                        <div class="cardHeader">
+                            <h3>Plus</h3>
+                            <h6>Para tu proyecto</h6>
+                            <div class="precio precio2">
+                                <div class="valor">
+                                    <span class="numEntero">$269</span>
+                                    <span class="numDecimal">00</span>
+                                    <span class="mes"> /mes </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="cardDescrip">
+                                <li><i class="fas fa-check-circle"></i><span>5GB</span> de almacenamiento SSD</li>
+                                <li><i class="fas fa-check-circle"></i><span>1</span> Base de datos</li>
+                                <li><i class="fas fa-check-circle"></i>Ancho de banda sin medicion</li>
+                                <li><i class="fas fa-check-circle"></i><span>WordPress</span> a un click</li>
+                                <li><i class="fas fa-check-circle"></i>Optimizado para <span>WordPress</span></li>
+                                <li><i class="fas fa-check-circle"></i>Cuentas de correo</li>
+                                <li><i class="fas fa-check-circle"></i>Construcctor de sitio</li>
+                                <li><i class="fas fa-check-circle"></i>Certificado <span>SSL</span></li>
+                                <li><i class="fas fa-times-circle"></i><span>Dominio</span></li>
+                            </ul>
+                        </div>
+                        <div class="cardFooter">
+                            <button id="btnPlanPlus" type="button" class="btn btn-success">Obtener</button>
+
+                        </div>
+                    </div>
+                    <div class="card cardFull">
+                        <div class="cardHeader">
+                            <h3>Full</h3>
+                            <h6>Expande tu sitio</h6>
+                            <div class="precio precio3">
+                                <div class="valor">
+                                    <span class="numEntero">$399</span>
+                                    <span class="numDecimal">00</span>
+                                    <span class="mes"> /mes </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <ul class="cardDescrip">
+                                <li><i class="fas fa-check-circle"></i><span>5GB</span> de almacenamiento SSD</li>
+                                <li><i class="fas fa-check-circle"></i><span>1</span> Base de datos</li>
+                                <li><i class="fas fa-check-circle"></i>Ancho de banda sin medicion</li>
+                                <li><i class="fas fa-check-circle"></i><span>WordPress</span> a un click</li>
+                                <li><i class="fas fa-check-circle"></i>Optimizado para <span>WordPress</span></li>
+                                <li><i class="fas fa-check-circle"></i>Cuentas de correo</li>
+                                <li><i class="fas fa-check-circle"></i>Construcctor de sitio</li>
+                                <li><i class="fas fa-check-circle"></i>Certificado <span>SSL</span></li>
+                                <li><i class="fas fa-check-circle"></i><span>Dominio</span></li>
+                            </ul>
+                        </div>
+                        <div class="cardFooter">
+                            <button id="btnPlanFull" type="button" class="btn btn-success">Obtener</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="beneficios" class="beneficiosContenedor">
+            <h2>Incluido en todos los planes</h2>
+            <div data-aos="zoom-out" class="beneficios">
+                <div class="beneficiosCard performance">
+                    <img src="img/beneficios/Fast loading-pana.svg" alt="">
+                    <h4>Máxima performance</h4>
+                    <p>Tu sitio vuela con la tecnologia de almacenamiento 100% ssd.</p>
+                </div>
+                <div class="beneficiosCard dispo">
+                    <img src="img/beneficios/Server status-bro.svg" alt="">
+                    <h4>Alta disponibilidad</h4>
+                    <p>Replicamos tu informacion en más de un servidor para garantizarte la continuidad operacional.</p>
+                </div>
+                <div class="beneficiosCard soporte">
+                    <img src="img/beneficios/Contact us-cuate.svg" alt="">
+                    <h4>Soporte 24x7x365</h4>
+                    <p>Nuestros expertos están a tu lado para brindarte asesoramiento y asistencia en cualquier momento.
+                    </p>
+                </div>
+                <div class="beneficiosCard backup">
+                    <img src="img/beneficios/Cloud hosting-amico.svg" alt="">
+                    <h4>Backups para tu tranquilidad</h4>
+                    <p>Hacemos copias de respaldo semanales de tus archivos, bases de datos y correos.</p>
+                </div>
+                <div class="beneficiosCard defensa">
+                    <img src="img/beneficios/Secure Server-cuate.svg" alt="">
+                    <h4>Anti-Spam/Anti-virus (valor:$90.00)</h4>
+                    <p>Basta de correos basura y sitios web infectados. Periodicamente auditamos tu alojamiento web.</p>
+                </div>
+                <div class="beneficiosCard apps">
+                    <img src="img/beneficios/Usability testing-amico.svg" alt="">
+                    <h4>Aplicaciones gratuitas</h4>
+                    <p>WordPress y las aplicaciones más usadas listas para instalar con 1 click.</p>
+                </div>
+                <div class="beneficiosCard panel">
+                    <img src="img/beneficios/Visual data-pana.svg" alt="">
+                    <h4>Panel de control (valor: $10.000)</h4>
+                    <p>Podés gestionar y configurar cada recurso de forma simple y rápida.</p>
+                </div>
+                <div class="beneficiosCard ssl">
+                    <img src="img/beneficios/Security On-bro.svg" alt="">
+                    <h4>Certificado SSL (valor: $990.00)</h4>
+                    <p>Seguridad y prestigio para tu página web. Muestra un sitio confiable de cara a tus visitas</p>
+                </div>
+                <div class="beneficiosCard db">
+                    <img src="img/beneficios/Server-amico.svg" alt="">
+                    <h4>Bases de datos</h4>
+                    <p>MySQL o SQLServer, utiliza PHP, NET, JS, y más.</p>
+                </div>
+            </div>
+        </section>
+        <section id="wordpress" class="opWord">
+            <img data-aos="fade-right" src="img/word/wordImg.png" alt="">
+            <div class="opWordDesc">
+                <h3>Hosting optimizado para WordPress</h3>
+                <p>La velocidad de carga de tu WordPress es esencial
+                    para que Google posicione a tu sitio entre los primeros resultados
+                    de búsqueda. Aprovecha la optimización de nuestro hosting super
+                    rápido y sácale ventaja a tus competidores.</p>
+                <button type="button" class="btn btn-outline-light btn-sm">Contratar</button>
+            </div>
+        </section>
+        <section id="dominios" class="domSection">
+            <div class="domSectionContent">
+                <h2>¡Te regalamos <span>el dominio</span>!</h2>
+                <p>Para que tu alojamiento web tenga el mejor nombre en internet</p>
+            </div>
+            <div class="imgDom">
+                <img data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom" src="img/dom/Domain names-amico.svg" alt="">
+            </div>
+            <h3>Consulta la disponibilidad de tu dominio:</h3>
+            <div class="busqDom">
+                <input type="search" class="searchDom" placeholder="ej: www.tusitio.com" name="" id="">
+                <button type="submit" class="searchButton">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        </section>
+        <div class="waveDomFooter">
+            <img src="img/dom/waveDomFooter.svg" alt="">
+        </div>
+        <section class="faqContenedor">
+
+            <h2>Preguntas frecuentes:</h2>
+
+            <div id="faq" class="preguntasContenedor">
+                <div class="accordion accordion-flush container" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                ¿Cúal será el costo de renovación de mi servicio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">El importe de renovación varía de acuerdo al periodo contratado:
+                                <h5>Lite:</h5>
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Mes: $489.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Año: $2720.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>2 Años: $4540.</li>
+                                </ul>
+                                <h5>Plus:</h5>
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Mes: $820.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Año: $6360.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>2 Años: $11810.</li>
+                                </ul>
+                                <h5>Full:</h5>
+                                <ul>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Mes: $1059.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>1 Año: $7260.</li>
+                                    <li><i class="fas fa-chevron-circle-right"></i>2 Años: $13220.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                ¿Cómo y através de qué medios puedo pagar el servicio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Nuestras formas de pago son:
+                                <h5>Transferencias / Depositos Bancarios</h5>
+                                <img src="img/faq/bancos.jpg" alt="">
+                                <h5>Pago Electrónico</h5>
+                                <img src="img/faq/pagoElect.jpg" alt="">
+                                <h5>Puntos de pago</h5>
+                                <img src="img/faq/efect.jpg" alt="">
+                                <h5>Tarjetas De Crédito / Débito</h5>
+                                <img src="img/faq/tarjetas.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                ¿Qué plan incluye el Certificado SSL?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Todos los planes <span>Lite, </span><span>Plus, </span> y <span>Full</span> incluyen
+                                Certificado de Seguridad SSL
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                ¿Puedo comprar un plan de alojamiento web sin un nombre de dominio?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Si, es posible. Si querés, es posible comprar el dominio a
+                                otro proveedor y apuntarlo a tu alojamiento web. Pero, si lo que buscas es
+                                mantener tu nombre de dominio y tu sitio web juntos en un mismo lugar - lo cual
+                                recomendamos para facilitar la resolución de problemas - también podés realizar la
+                                migración de un nombre de dominio existente a nuestro hosting.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                ¿Puedo transferir mi sitio web a este Host?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Sí. Si utilizas uno de los Gestores de
+                                Contenido más comunes, como lo es WordPress, hay muchas herramientas disponibles para
+                                realizar la migración de tu sitio de forma fácil de un alojamiento web a otro. Y si no
+                                estás utilizando un Gestor de Contenido común, o si necesitas asesoría con esto, solo
+                                avísanos. Nuestro equipo de soporte hará su mejor esfuerzo para asistirte con la
+                                transferencia.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                ¿Qué es una base de datos MySQL?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>MySQL es una herramienta de administración de bases de datos de
+                                    código abierto que emplea lenguaje de consulta estructurado (SQL) para acceder,
+                                    añadir y
+                                    gestionar el contenido de una base de datos. Al ser de código abierto, es una
+                                    herramienta muy utilizada por desarrolladores de software, formando así la
+                                    estructura
+                                    principal de la mayoría de los sistemas operativos más conocidos.</p>
+                                <p>La mayoría de sistemas de gestión de contenido modernos (como WordPress) lo usan para
+                                    almacenar datos. De esta forma, cuando se hace una modificación en el CMS, ésta se
+                                    registra en la base de datos MySQL, y luego cada vez que un visitante llega al
+                                    sitio, se
+                                    le muestra el contenido de esa base de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                                aria-controls="flush-collapseSeven">
+                                ¿Qué es el ancho de banda de un web host?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>De seguro el término "ancho de banda" te suena familiar, gracias a tu proveedor de
+                                    Internet. Podemos definir este término como la cantidad de datos que pasan por una
+                                    conexión a Internet.</p>
+                                <p>Cuando un usuario quiere visitar tu página web, le envía una solicitud al servidor. A
+                                    su vez el servidor responde y le muestra la información que hay en la página al
+                                    usuario. Mientras más personas entren a tu sitio más ancho de banda consumirás,
+                                    hasta llegar a un punto en el que estarás a plena capacidad.</p>
+                                <p>Cuando muchos usuarios intentan ingresar al mismo tiempo a tu sitio web, la tubería
+                                    se llena y el sitio puede cargar lento o incluso puede dejar de funcionar. Esto es
+                                    lo que se encuentra determinado por el ancho de banda del alojamiento web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseEight" aria-expanded="false"
+                                aria-controls="flush-collapseEight">
+                                ¿Cómo funciona un servicio de host web?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseEight" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Podría decirse que tu página web es una colección de archivos y base de datos, y esta
+                                    información se le muestra a los visitantes en los diferentes navegadores web.
+                                    Hostinger ofrece espacio para que tanto la página web como las bases de datos sean
+                                    almacenadas en tu host.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                ¿A qué se le llama web hosting?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>Todo sitio web consta de un dominio y un hosting web. El dominio es como tu dirección
+                                    y el hosting web como el edificio físico.</p>
+                                <p>Cuando estás navegando por internet y escribes https://www.google.com.ar, por
+                                    ejemplo, le estás diciendo a tu navegador web que el dominio es hostinger.com.ar y
+                                    este buscará cuál es su hosting web para cargar el contenido del mismo.</p>
+                                <p>En la actualidad existen diferentes tipos de servicios. Y nosotros, como muchos
+                                    otros proveedores, ofrece varias opciones de planes a sus clientes. De esta manera,
+                                    nos aseguramos de que paguen solo lo que necesitan. Mientras más popular sea tu
+                                    sitio web más recursos del servidor utilizará.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contacto">
+            <h2>Contacte con un asesor: </h2>
+            <div class="contenedorContacto">
+
+                <div class="contactoBotones">
+                    <a class="btn btn-outline-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas fa-envelope"></i>Contacto
+                    </a>
+
+                    <button type="button" class="btn btn-outline-success"><i
+                            class="fab fa-whatsapp"></i>Whatsapp</button>
+                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-phone-alt"></i>Llamada</button>
+                </div>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <form action="">
+                            <legend>Complete los datos de contacto:</legend>
+                            <div class="formBack">
+                                <div class="formDatos">
+                                    <div class="formNombres">
+                                        <label for="nombre"></label>
+                                        <input type="text" name="nombre" id="nombre" required placeholder=" Nombre">
+                                        <label for="apellido"></label>
+                                        <input type="text" name="apellido" id="apellido" required
+                                            placeholder=" Apellido">
+                                    </div>
+                                    <div class="formMedios">
+
+                                        <label for="email"></label>
+                                        <input type="email" name="email" id="email" required placeholder=" Email">
+                                        <input type="tel" name="tel" id="tel" required placeholder=" Telefono">
+                                        <label for="tel"></label>
+                                    </div>
+                                </div>
+                                <div class="formMensaje">
+                                    <label for="mensaje"></label>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                        placeholder=" Motivo de contacto"></textarea>
+                                </div>
+                            </div>
+                            <div class="formBotones">
+                                <button type="button" class="btn btn-secondary">Enviar</button>
+                                <button type="button" class="btn btn-secondary">Borrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="copy">
+                <div class="copyDesc">
+                    <h5>2010-2022 Servicios de hosting Premium para Argentina y dominios a exelente precio</h5>
+                    <h6>© Copyright Todos los derechos reservados</h6>
+                </div>
+
+            </div>
+
+            <div class="redes">
+                <h5>Encontranos en nuestras redes:</h5>
+                <div class="redesIcons">
+
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-youtube-square"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

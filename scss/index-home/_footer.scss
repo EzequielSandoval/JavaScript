@@ -1,0 +1,98 @@
+footer {
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    // border: 2px solid white;
+    background-color: #dc2f02;
+    height: 150px;
+  
+    .copy {
+      margin-left: 30%;
+      // border: 2px solid blue;
+      height: 100%;
+      width: 40%;
+      text-align: center;
+  
+      .copyDesc {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+  
+        h5 {
+          padding-top: 20px;
+        }
+  
+        h6 {
+          padding-top: 15px;
+        }
+      }
+    }
+  
+    .redes {
+      // border: 2px solid black;
+      height: 100%;
+      width: 30%;
+  
+      h5 {
+        padding-top: 20px;
+        text-align: center;
+      }
+  
+      .redesIcons {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 5px;
+        margin: auto;
+        height: 40%;
+        width: 70%;
+  
+        .fab {
+          padding-top: 10px;
+          padding: 2%;
+        }
+  
+        .fa-linkedin {
+          color: #0a66c2;
+        }
+  
+        .fa-linkedin:hover {
+          color: #15b8e0;
+        }
+  
+        .fa-facebook-square {
+          color: #4267B2;
+        }
+  
+        .fa-facebook-square:hover {
+          color: #898F9C;
+        }
+  
+        .fa-twitter-square {
+          color: #1DA1F2;
+        }
+  
+        .fa-twitter-square:hover {
+          color: #14171A;
+        }
+  
+        .fa-youtube-square {
+          color: #FF0000;
+        }
+  
+        .fa-youtube-square:hover {
+          color: #282828;
+        }
+  
+        .fa-instagram-square {
+          color: #833AB4;
+        }
+  
+        .fa-instagram-square:hover {
+          color: #E1306C;
+        }
+      }
+    }
+  }

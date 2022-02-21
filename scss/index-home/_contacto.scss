@@ -1,0 +1,160 @@
+.contacto {
+    background: url(../img/faq/waveContact.svg), linear-gradient(0deg, #dc2f02 21%, #9d0208 70%, #370617 100%);
+    background-repeat: no-repeat;
+    padding-bottom: 15px;
+  
+    .contenedorContacto {
+      border: 2px solid white;
+      background-color: white;
+      width: 50%;
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-right: 25%;
+      margin-left: 25%;
+      padding: 10px;
+      margin-bottom: 10px;
+  
+      .contactoBotones {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+  
+      .card {
+        margin-top: 20px;
+      }
+  
+      .fab {
+        margin-right: 6px;
+        font-size: 20px;
+      }
+  
+      .fas {
+        margin-right: 6px;
+        font-size: 18px;
+      }
+    }
+  
+    h2 {
+      color: white;
+      text-align: center;
+      padding-top: 210px;
+    }
+  
+    form {
+      .formBack {
+        background-color: #faa007;
+        border-radius: 10px;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        box-shadow: 0px 0px 35px -20px;
+      }
+  
+      .formDatos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+  
+        .formNombres {
+          display: flex;
+          flex-direction: column;
+  
+          #nombre {
+            border: 2px solid #dfdfdf;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            padding-left: 6px;
+          }
+  
+          #apellido {
+            border: 2px solid #dfdfdf;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            padding-left: 6px;
+          }
+  
+          #apellido:focus {
+            border: none;
+            outline: 4px solid #dfdfdf;
+          }
+  
+          #nombre:focus {
+            border: none;
+            outline: 4px solid #dfdfdf;
+          }
+        }
+  
+        .formMedios {
+          display: flex;
+          flex-direction: column;
+  
+          #email {
+            border: 2px solid #dfdfdf;
+            border-radius: 10px;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            padding-left: 6px;
+          }
+        }
+  
+        #tel {
+          border: 2px solid #dfdfdf;
+          border-radius: 10px;
+          width: 200px;
+          height: 30px;
+          margin: 10px;
+          padding-left: 6px;
+        }
+  
+        #email:focus {
+          border: none;
+          outline: 4px solid #dfdfdf;
+        }
+  
+        #tel:focus {
+          border: none;
+          outline: 4px solid #dfdfdf;
+        }
+      }
+  
+      .formMensaje {
+        display: flex;
+        justify-content: center;
+  
+        #mensaje {
+          border: 2px solid #dfdfdf;
+          border-radius: 10px;
+          margin: 10px;
+          height: 150px;
+          width: 480px;
+          padding-left: 6px;
+        }
+  
+        #mensaje:focus {
+          border: none;
+          outline: 4px solid #dfdfdf;
+        }
+  
+        textarea {
+          resize: none;
+        }
+      }
+  
+      .formBotones {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .btn {
+        margin: 10px;
+      }
+    }
+  
+  }
