@@ -59,10 +59,10 @@
 
         <section class="compraContainer">
 
-            <div class="compra animate__animated animate__fadeInLeft">
+            <div class="compra ">
                 <div class="titulosResumen"></div>
                 <div class="resumen-body">
-                    <form id="formulario">
+                    <form id="formulario" onsubmit="return false">
                         <ul class="meses">
                             <li class="estilos">
 
@@ -117,12 +117,16 @@
                             </div>
                         </div>
                         <div class="codigoDescuento">
-                            <input id="codDesc" type="text" placeholder="ingrese codigo de descuento">
+                            <input id="codDesc" type="text"  placeholder="ingrese codigo de descuento">
+                            <button type="button" id="aplicarCodigo" class="btn-sm btn btn-warning">Aplicar</button>
+                        </div>
+                        <div class="buttonResumen">
+                            
                         </div>
                     </form>
                 </div>
             </div>
-            <div class="animate__animated animate__fadeInRight" id="resumen">
+            <div id="resumen">
                 <h4>Resumen:</h4>
                 <div id="resumenContainer">
                     <div class="resumenProductos"></div>
