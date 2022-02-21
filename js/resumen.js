@@ -17,7 +17,7 @@ const desc50 = (descontarMayor) => { return descontarMayor * 0.50 }
 let planTipo = localStorage.getItem('tipoPlan')
 let costePlan = localStorage.getItem('costePlan')
 
-window.addEventListener = () => {
+// window.addEventListener = () => {
 
     parseInt(costePlan)
     //titulo de la compra
@@ -239,4 +239,4 @@ window.addEventListener = () => {
 
     }
 
-}
+// }
