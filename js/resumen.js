@@ -35,11 +35,16 @@ let inputDuracion3 = document.getElementById("duracion3")
 inputDuracion1.onchange = () => {
     duracion = 1;
     costeMeses = parseInt(costePlan)
+    calcDescuentos = 0
+    totalDescuentos = 0
     updateResumen();
+    
 };
 inputDuracion2.onchange = () => {
     duracion = 6;
     costeMeses = parseInt(costePlan) * duracion;
+    calcDescuentos = 0
+    totalDescuentos = 0
     updateResumen();
 };
 inputDuracion3.onchange = () => {
