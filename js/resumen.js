@@ -37,6 +37,7 @@ inputDuracion1.onchange = () => {
     costeMeses = parseInt(costePlan)
     calcDescuentos = 0
     totalDescuentos = 0
+    codigoDescuento = 0
     updateResumen();
     
 };
@@ -45,12 +46,14 @@ inputDuracion2.onchange = () => {
     costeMeses = parseInt(costePlan) * duracion;
     calcDescuentos = 0
     totalDescuentos = 0
+    codigoDescuento = 0
     updateResumen();
 };
 inputDuracion3.onchange = () => {
     duracion = 12;
     costeMeses = parseInt(costePlan) * duracion;
     Swal.fire('Los planes con duracion de un año poseen un descuento del 25%');
+    codigoDescuento = 0
     calcDescuentos = desc25(costeMeses)
     totalDescuentos = calcDescuentos
     updateResumen();
@@ -80,9 +83,11 @@ inputSo1.onchange = () => {
         if (result.isConfirmed) {
             Swal.fire('Agregado!', '', 'success');
             respaldo = "Si";
+            codigoDescuento = 0
             costeCopia = 90 * duracion;
             updateResumen();
         } else if (result.isDenied) {
+            codigoDescuento = 0
             Swal.fire('No agregaste la copia de seguridad!', '', 'info');
             respaldo = "No";
 
@@ -94,6 +99,7 @@ inputSo2.onchange = () => {
     sistema = "Windows";
     respaldo = "No";
     costeCopia = 0;
+    codigoDescuento = 0
     Swal.fire({
         title: 'Este sistema no posee copia de seguridad',
         icon: 'info',
@@ -110,9 +116,11 @@ let inputSsl = document.getElementById("ssl")
 inputSsl.onchange = () => {
     if (inputSsl.checked == true) {
         certOpcion = "SI"
+        codigoDescuento = 0
         costeCertificado = 1000
 
     } else {
+        codigoDescuento = 0
         costeCertificado = 0
         certOpcion = "NO"
     }
