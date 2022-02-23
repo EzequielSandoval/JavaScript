@@ -20,7 +20,7 @@
         padding: 20px;
         border-radius: 15px;
         width: 60%;
-        height: 500px;
+        height: 450px;
 
         .resumen-body {
 
@@ -171,7 +171,8 @@
             .codigoDescuento {
                 display: flex;
                 justify-content: center;
-               
+                border-bottom: 2px solid rgba(128, 128, 128, 0.363);
+                border-radius: 8px;
 
                 input {
                     border-style: none;
@@ -185,12 +186,7 @@
             }
 
         }
-        .buttonResumen{
-            border-bottom: 2px solid rgba(128, 128, 128, 0.363);
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-        }
+       
         .btn{
             margin: 5px;
         }

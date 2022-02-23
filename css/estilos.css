@@ -619,7 +619,7 @@ footer .redes .redesIcons .fa-instagram-square:hover {
   padding: 20px;
   border-radius: 15px;
   width: 60%;
-  height: 500px;
+  height: 450px;
 }
 .compraContainer .compra .resumen-body {
   margin: auto;
@@ -746,6 +746,8 @@ footer .redes .redesIcons .fa-instagram-square:hover {
 .compraContainer .compra .resumen-body .codigoDescuento {
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.363);
+  border-radius: 8px;
 }
 .compraContainer .compra .resumen-body .codigoDescuento input {
   border-style: none;
@@ -755,12 +757,6 @@ footer .redes .redesIcons .fa-instagram-square:hover {
   margin: 10px;
   height: 50px;
   width: 300px;
-}
-.compraContainer .compra .buttonResumen {
-  border-bottom: 2px solid rgba(128, 128, 128, 0.363);
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
 }
 .compraContainer .compra .btn {
   margin: 5px;
