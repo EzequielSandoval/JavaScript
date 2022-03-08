@@ -769,12 +769,13 @@ body {
   color: white;
 }
 .compraContainer #resumenVisible {
-  height: 650px;
-  width: 25%;
+  height: 600px;
+  width: 30%;
   padding: 20px;
   margin: auto;
   position: absolute;
   z-index: 6;
+  font-size: 15px;
 }
 .compraContainer #resumenVisible #resumen {
   background-color: white;
@@ -931,7 +932,7 @@ body {
   }
 
   .planes {
-    height: 131.25rem;
+    height: 140.25rem;
     align-items: center;
   }
   .planes .planesTitle {
@@ -1073,8 +1074,9 @@ body {
   }
 
   .footer {
+    position: relative;
     flex-direction: column;
-    height: 55vh;
+    height: 39vh;
   }
   .footer .copy {
     height: 30%;
@@ -1094,20 +1096,144 @@ body {
 
   /*resumen*/
   .compraContainer {
-    display: flex;
     flex-direction: column;
+    height: auto;
   }
-
-  .compraContainer .compra {
-    width: 90%;
+  .compraContainer #resumenVisible {
+    width: 95%;
+    padding: 0;
   }
-
-  .compraContainer #resumen {
+  .compraContainer #resumenVisible #resumen {
     margin-top: 50px;
     width: 90%;
+    padding: 20px;
+    height: unset;
+    margin: 30px auto;
+  }
+  .compraContainer .compra {
+    width: 95%;
+    margin-top: 10px;
+    height: 500px;
+  }
+  .compraContainer .compra .resumen-body .meses {
+    padding: 0;
+  }
+  .compraContainer .compra .resumen-body .meses li {
+    height: 60px;
+    width: 100px;
+    font-size: 12px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer {
+    font-size: 12px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soWin .fa-windows {
+    font-size: 20px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soLin .fa-linux {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl .sslBoton .fa-shield {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento {
+    flex-direction: column;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento input {
+    height: 35px;
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 510px;
+    width: 90%;
+    margin: auto;
+  }
+  .modal-content .modal-body legend {
+    font-size: 16px;
+  }
+  .modal-content .modal-body .formBack .formDatos {
+    flex-direction: column;
+    justify-content: unset;
+    height: 260px;
+    width: 284px;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos input {
+    width: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 45px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
+    position: unset;
+  }
 }
 /* Fin Celulares */
 /*Tablet*/
@@ -1146,7 +1272,7 @@ body {
   }
   .planes .tarjetasPlanes {
     margin-top: 10%;
-    width: 90%;
+    width: 70%;
   }
   .planes .tarjetasPlanes .card-group {
     flex-direction: column;
@@ -1167,9 +1293,8 @@ body {
   }
   .beneficiosContenedor .beneficios {
     height: 95%;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 70%;
+    margin: auto;
     grid-template-columns: 1fr;
     grid-template-areas: "performance" "dispo" "soporte" "backup" "defensa" "apps" "panel" "ssl" "db";
   }
@@ -1280,6 +1405,7 @@ body {
   }
 
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
   }
@@ -1301,21 +1427,151 @@ body {
 
   /*resumen*/
   .compraContainer {
-    display: flex;
     flex-direction: column;
+    height: auto;
   }
-
-  .compraContainer .compra {
-    width: 90%;
+  .compraContainer #resumenVisible {
+    width: 95%;
+    padding: 0;
   }
-
-  .compraContainer #resumen {
+  .compraContainer #resumenVisible #resumen {
     margin-top: 50px;
+    width: 60%;
+    padding: 20px;
+    height: unset;
+    margin: 30px auto;
+  }
+  .compraContainer .compra {
+    width: 95%;
+    margin-top: 10px;
+    height: 500px;
+  }
+  .compraContainer .compra .resumen-body .meses {
+    padding: 0;
+  }
+  .compraContainer .compra .resumen-body .meses li {
+    height: 60px;
+    width: 100px;
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer {
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soWin .fa-windows {
+    font-size: 20px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soLin .fa-linux {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl .sslBoton .fa-shield {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento {
+    flex-direction: column;
+    align-items: center;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento input {
+    height: 35px;
     width: 90%;
+    font-size: 15px;
+  }
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 460px;
+    width: 85%;
+    margin: auto;
+  }
+  .modal-content .modal-body legend {
+    font-size: 16px;
+  }
+  .modal-content .modal-body .formBack .formDatos {
+    flex-direction: column;
+    justify-content: unset;
+    height: 260px;
+    width: 284px;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos input {
+    width: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    margin-top: 45px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gray;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail {
+    width: 30px;
+    border: 2px solid blue;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gray;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel {
+    width: 30px;
+    border: 2px solid blue;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
+    position: unset;
+  }
 }
+/*fin resumen*/
 /*Fin Tablet*/
 /*pantallas pequeñas */
 @media only screen and (min-width: 769px) and (max-width: 990px) {
@@ -1368,8 +1624,8 @@ body {
     margin-right: 5%;
   }
   .beneficiosContenedor .beneficios .beneficiosCard img {
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
   }
 
   .opWord {
@@ -1477,6 +1733,7 @@ body {
   }
 
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
   }
@@ -1498,21 +1755,142 @@ body {
 
   /*resumen*/
   .compraContainer {
-    display: flex;
     flex-direction: column;
+    height: auto;
   }
-
-  .compraContainer .compra {
-    width: 90%;
+  .compraContainer #resumenVisible {
+    width: 95%;
+    padding: 0;
   }
-
-  .compraContainer #resumen {
+  .compraContainer #resumenVisible #resumen {
     margin-top: 50px;
-    width: 50%;
+    width: 60%;
+    padding: 20px;
+    height: unset;
+    margin: 30px auto;
+  }
+  .compraContainer .compra {
+    width: 95%;
+    margin-top: 10px;
+    height: 500px;
+  }
+  .compraContainer .compra .resumen-body .meses {
+    padding: 0;
+  }
+  .compraContainer .compra .resumen-body .meses li {
+    height: 60px;
+    width: 100px;
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer {
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soWin .fa-windows {
+    font-size: 20px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soLin .fa-linux {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl .sslBoton .fa-shield {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento {
+    flex-direction: column;
+    align-items: center;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento input {
+    height: 35px;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 460px;
+  }
+  .modal-content .modal-body legend {
+    font-size: 16px;
+  }
+  .modal-content .modal-body .formBack .formDatos {
+    flex-direction: row;
+    justify-content: unset;
+    height: 170px;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos input {
+    width: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
+    position: unset;
+  }
 }
+/*fin resumen*/
 /*Fin pantallas pequelas */
 /*pantallas medianadas */
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
@@ -1669,6 +2047,7 @@ body {
   }
 
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
   }
@@ -1689,8 +2068,140 @@ body {
   }
 
   /*resumen*/
-  .compraContainer #resumen {
-    width: 30%;
+  .compraContainer {
+    flex-direction: column;
+    height: auto;
+  }
+  .compraContainer #resumenVisible {
+    width: 95%;
+    padding: 0;
+  }
+  .compraContainer #resumenVisible #resumen {
+    margin-top: 50px;
+    width: 60%;
+    padding: 20px;
+    height: unset;
+    margin: 30px auto;
+  }
+  .compraContainer .compra {
+    width: 95%;
+    margin-top: 10px;
+    height: 500px;
+  }
+  .compraContainer .compra .resumen-body .meses {
+    padding: 0;
+  }
+  .compraContainer .compra .resumen-body .meses li {
+    height: 60px;
+    width: 100px;
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer {
+    font-size: 15px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soWin .fa-windows {
+    font-size: 20px;
+  }
+  .compraContainer .compra .resumen-body .sistemaOperativoContainer .soLin .fa-linux {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .compraContainer .compra .resumen-body .certificadoSsl .sslBoton .fa-shield {
+    font-size: 25px;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento {
+    flex-direction: column;
+    align-items: center;
+  }
+  .compraContainer .compra .resumen-body .codigoDescuento input {
+    height: 35px;
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
+  }
+
+  /*fin resumen*/
+  .modal-content {
+    height: 460px;
+  }
+  .modal-content .modal-body legend {
+    font-size: 16px;
+  }
+  .modal-content .modal-body .formBack .formDatos {
+    flex-direction: row;
+    justify-content: unset;
+    height: 170px;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos input {
+    width: auto;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail .fa-triangle-exclamation {
+    position: unset;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    justify-content: center;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel {
+    width: 30px;
+  }
+  .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
+    position: unset;
   }
 
   /*fin resumen*/
@@ -1707,6 +2218,12 @@ body {
     flex-basis: auto;
     position: relative;
     z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .h4,
+h4 {
+    font-size: 1.3rem;
   }
 }
 

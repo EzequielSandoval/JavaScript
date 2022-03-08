@@ -201,13 +201,13 @@
     }
 
     #resumenVisible {
-        // border: 2px solid black;
-        height: 650px;
-        width: 25%;
+        height: 600px;
+        width: 30%;
         padding: 20px;
         margin: auto;
         position: absolute;
         z-index: 6;
+        font-size: 15px;
 
         #resumen {
             background-color: rgb(255, 255, 255);

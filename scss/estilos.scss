@@ -48,7 +48,7 @@
 
   // planes
   .planes {
-    height: 131.25rem;
+    height: 140.25rem;
     align-items: center;
 
     .planesTitle {
@@ -201,7 +201,6 @@
       margin: auto;
 
       .contactoBotones {
-
         flex-direction: column;
 
         .btn {
@@ -265,8 +264,10 @@
   // fin contacto 
   // foooter
   .footer {
+    position: relative;
     flex-direction: column;
-    height: 55vh;
+    height: 39vh;
+
 
     .copy {
       height: 30%;
@@ -294,25 +295,202 @@
 
   /*resumen*/
 
+
   .compraContainer {
-    display: flex;
     flex-direction: column;
-  }
+    height: auto;
 
-  .compraContainer {
+    #resumenVisible {
+      width: 95%;
+      padding: 0;
+
+      #resumen {
+        margin-top: 50px;
+        width: 90%;
+        padding: 20px;
+        height: unset;
+        margin: 30px auto;
+      }
+    }
+
+
+
     .compra {
-      width: 90%;
+      width: 95%;
+      margin-top: 10px;
+      height: 500px;
+
+      .resumen-body {
+        .meses {
+          padding: 0;
+
+          li {
+            height: 60px;
+            width: 100px;
+            font-size: 12px;
+          }
+        }
+
+        .sistemaOperativoContainer {
+          font-size: 12px;
+
+          .soWin {
+            .fa-windows {
+              font-size: 20px;
+            }
+          }
+
+          .soLin {
+            .fa-linux {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .certificadoSsl {
+          font-size: 12px;
+          margin-bottom: 16px;
+
+          .sslBoton {
+            .fa-shield {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .codigoDescuento {
+          flex-direction: column;
+
+          input {
+            height: 35px;
+            width: 90%;
+            font-size: 11px;
+          }
+        }
+      }
     }
   }
 
-  .compraContainer {
-    #resumen {
-      margin-top: 50px;
-      width: 90%;
-    }
+
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 510px;
+    width: 90%;
+    margin: auto;
+
+    .modal-body {
+      legend {
+        font-size: 16px;
+      }
+
+      .formBack {
+        .formDatos {
+          flex-direction: column;
+          justify-content: unset;
+          height: 260px;
+          width: 284px;
+          margin: auto;
+          
+          .formNombres {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+
+            .alertName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 80px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertLastName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconLastName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 187px;
+                  // left: 333px;
+                }
+              }
+            }
+          }
+
+          input {
+            width: auto;
+          }
+
+          .formMedios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            margin-top: 45px;
+
+            .alertEmail {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconEmail {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                }
+              }
+            }
+
+            .alertTel {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconTel {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 50px;
+                  // left: 333px;
+
+                }
+              }
+            }
+          }
+
+
+
+
+        }
+      }
+    }
+  }
 }
 
 /* Fin Celulares */
@@ -366,7 +544,7 @@
 
     .tarjetasPlanes {
       margin-top: 10%;
-      width: 90%;
+      width: 70%;
 
       .card-group {
         flex-direction: column;
@@ -398,9 +576,8 @@
 
     .beneficios {
       height: 95%;
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
+      width: 70%;
+      margin: auto;
       grid-template-columns: 1fr;
       grid-template-areas:
         "performance"
@@ -574,6 +751,7 @@
   // fin contacto 
   // foooter
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
 
@@ -600,26 +778,217 @@
   // fin footer
   /*resumen*/
 
+
   .compraContainer {
-    display: flex;
     flex-direction: column;
-  }
+    height: auto;
 
-  .compraContainer {
+    #resumenVisible {
+      width: 95%;
+      padding: 0;
+
+      #resumen {
+        margin-top: 50px;
+        width: 60%;
+        padding: 20px;
+        height: unset;
+        margin: 30px auto;
+      }
+    }
+
+
+
     .compra {
-      width: 90%;
+      // justify-content: space-around;
+      width: 95%;
+      margin-top: 10px;
+      height: 500px;
+
+      .resumen-body {
+        .meses {
+          // flex-direction: column;
+          padding: 0;
+
+          li {
+            height: 60px;
+            width: 100px;
+            font-size: 15px;
+          }
+        }
+
+        .sistemaOperativoContainer {
+          font-size: 15px;
+
+          .soWin {
+            .fa-windows {
+              font-size: 20px;
+            }
+          }
+
+          .soLin {
+            .fa-linux {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .certificadoSsl {
+          font-size: 15px;
+          margin-bottom: 16px;
+
+          .sslBoton {
+            .fa-shield {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .codigoDescuento {
+          flex-direction: column;
+          align-items: center;
+
+          input {
+            height: 35px;
+            width: 90%;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 
-  .compraContainer {
-    #resumen {
-      margin-top: 50px;
-      width: 90%;
-    }
+
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 460px;
+    width: 85%;
+    margin: auto;
+
+    .modal-body {
+      legend {
+        font-size: 16px;
+      }
+
+      .formBack {
+        .formDatos {
+          flex-direction: column;
+          justify-content: unset;
+          height: 260px;
+          width: 284px;
+          margin: auto;
+
+          .formNombres {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+
+            .alertName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 80px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertLastName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconLastName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 187px;
+                  // left: 333px;
+                }
+              }
+            }
+          }
+
+          input {
+            width: auto;
+          }
+
+          .formMedios {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            margin-top: 45px;
+
+            .alertEmail {
+              display: flex;
+              flex-direction: row;
+              border: 2px solid gray;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconEmail {
+                width: 30px;
+                border: 2px solid blue;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 220px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertTel {
+              display: flex;
+              flex-direction: row;
+              border: 2px solid gray;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconTel {
+                width: 30px;
+                border: 2px solid blue;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 50px;
+                  // left: 333px;
+
+                }
+              }
+            }
+          }
+
+
+
+
+        }
+      }
+    }
+  }
 }
+
+
+
+/*fin resumen*/
+
 
 /*Fin Tablet*/
 
@@ -644,18 +1013,6 @@
       height: 10%;
     }
 
-    // .portadaImg {
-    // height: 35%;
-
-    // img {
-    //   position: absolute;
-    //   left: 25%;
-    //   right: 25%;
-    //   top: 300px;
-    //   height: 250px;
-    //   width: 50%;
-    // }
-    // }
 
   }
 
@@ -707,22 +1064,11 @@
       width: 90%;
       margin-left: 5%;
       margin-right: 5%;
-      // grid-template-columns: 1fr;
-      // grid-template-areas:
-      //   "performance"
-      //   "dispo"
-      //   "soporte"
-      //   "backup"
-      //   "defensa"
-      //   "apps"
-      //   "panel"
-      //   "ssl"
-      //   "db";
 
       .beneficiosCard {
         img {
-          width: 250px;
-          height: 250px;
+          width: 220px;
+          height: 220px;
         }
       }
     }
@@ -882,6 +1228,7 @@
   // fin contacto 
   // foooter
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
 
@@ -908,26 +1255,207 @@
   // fin footer
   /*resumen*/
 
+
+
   .compraContainer {
-    display: flex;
     flex-direction: column;
-  }
+    height: auto;
 
-  .compraContainer {
+    #resumenVisible {
+      width: 95%;
+      padding: 0;
+
+      #resumen {
+        margin-top: 50px;
+        width: 60%;
+        padding: 20px;
+        height: unset;
+        margin: 30px auto;
+      }
+    }
+
+
+
     .compra {
-      width: 90%;
+      // justify-content: space-around;
+      width: 95%;
+      margin-top: 10px;
+      height: 500px;
+
+      .resumen-body {
+        .meses {
+          // flex-direction: column;
+          padding: 0;
+
+          li {
+            height: 60px;
+            width: 100px;
+            font-size: 15px;
+          }
+        }
+
+        .sistemaOperativoContainer {
+          font-size: 15px;
+
+          .soWin {
+            .fa-windows {
+              font-size: 20px;
+            }
+          }
+
+          .soLin {
+            .fa-linux {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .certificadoSsl {
+          font-size: 15px;
+          margin-bottom: 16px;
+
+          .sslBoton {
+            .fa-shield {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .codigoDescuento {
+          flex-direction: column;
+          align-items: center;
+
+          input {
+            height: 35px;
+            width: 90%;
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 
-  .compraContainer {
-    #resumen {
-      margin-top: 50px;
-      width: 50%;
-    }
+
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
   }
 
   /*fin resumen*/
+  .modal-content {
+    height: 460px;
+
+    .modal-body {
+      legend {
+        font-size: 16px;
+      }
+
+      .formBack {
+        .formDatos {
+          flex-direction: row;
+          justify-content: unset;
+          height: 170px;
+          margin: auto;
+
+          .formNombres {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+
+            .alertName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 80px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertLastName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconLastName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 187px;
+                  // left: 333px;
+                }
+              }
+            }
+          }
+
+          input {
+            width: auto;
+          }
+
+          .formMedios {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+
+
+            .alertEmail {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconEmail {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 220px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertTel {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconTel {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+
+                }
+              }
+            }
+          }
+
+
+
+
+        }
+      }
+    }
+  }
 }
+
+
+/*fin resumen*/
+
 
 /*Fin pantallas pequelas */
 
@@ -1163,6 +1691,7 @@
   // fin contacto 
   // foooter
   .footer {
+    position: relative;
     flex-direction: column;
     height: 55vh;
 
@@ -1188,9 +1717,200 @@
 
   // fin footer
   /*resumen*/
+
   .compraContainer {
-    #resumen {
-      width: 30%;
+    flex-direction: column;
+    height: auto;
+
+    #resumenVisible {
+      width: 95%;
+      padding: 0;
+
+      #resumen {
+        margin-top: 50px;
+        width: 60%;
+        padding: 20px;
+        height: unset;
+        margin: 30px auto;
+      }
+    }
+
+
+
+    .compra {
+      // justify-content: space-around;
+      width: 95%;
+      margin-top: 10px;
+      height: 500px;
+
+      .resumen-body {
+        .meses {
+          // flex-direction: column;
+          padding: 0;
+
+          li {
+            height: 60px;
+            width: 100px;
+            font-size: 15px;
+          }
+        }
+
+        .sistemaOperativoContainer {
+          font-size: 15px;
+
+          .soWin {
+            .fa-windows {
+              font-size: 20px;
+            }
+          }
+
+          .soLin {
+            .fa-linux {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .certificadoSsl {
+          font-size: 15px;
+          margin-bottom: 16px;
+
+          .sslBoton {
+            .fa-shield {
+              font-size: 25px;
+            }
+          }
+        }
+
+        .codigoDescuento {
+          flex-direction: column;
+          align-items: center;
+
+          input {
+            height: 35px;
+            width: 90%;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .start-100 {
+    left: 98% !important;
+    top: -3px !important;
+  }
+
+  /*fin resumen*/
+  .modal-content {
+    height: 460px;
+
+    .modal-body {
+      legend {
+        font-size: 16px;
+      }
+
+      .formBack {
+        .formDatos {
+          flex-direction: row;
+          justify-content: unset;
+          height: 170px;
+          margin: auto;
+
+          .formNombres {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+
+            .alertName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                }
+              }
+            }
+
+            .alertLastName {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconLastName {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 187px;
+                  // left: 333px;
+                }
+              }
+            }
+          }
+
+          input {
+            width: auto;
+          }
+
+          .formMedios {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+
+
+
+            .alertEmail {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconEmail {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // top: 220px;
+                  // left: 333px;
+                }
+              }
+            }
+
+            .alertTel {
+              display: flex;
+              flex-direction: row;
+              width: 270px;
+              justify-content: center;
+
+              .alertIconTel {
+                width: 30px;
+
+                .fa-triangle-exclamation {
+                  position: unset;
+                  // bottom: 50px;
+                  // left: 333px;
+
+                }
+              }
+            }
+          }
+
+
+
+
+        }
+      }
     }
   }
 
@@ -1217,4 +1937,13 @@
       z-index: 1;
     }
   }
+}
+
+@media (min-width: 1200px) {
+
+  .h4,
+  h4 {
+    font-size: 1.3rem;
+  }
+
 }
