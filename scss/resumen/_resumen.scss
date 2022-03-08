@@ -21,6 +21,9 @@
         border-radius: 15px;
         width: 60%;
         height: 450px;
+        margin: auto;
+        position: relative;
+        z-index: 7;
 
         .resumen-body {
 
@@ -186,62 +189,83 @@
             }
 
         }
-       
-        .btn{
+
+        .btn {
             margin: 5px;
         }
-        .btn-warning{
+
+        .btn-warning {
             background-color: #f48c06;
             color: white;
         }
     }
 
-    #resumen {
-        background-color: rgb(255, 255, 255);
-        box-shadow: 0px 0px 30px 0px rgba(150, 147, 147, 0.6);
-        border-radius: 15px;
-        height: 600px;
+    #resumenVisible {
+        // border: 2px solid black;
+        height: 650px;
         width: 25%;
         padding: 20px;
+        margin: auto;
+        position: absolute;
+        z-index: 6;
 
-
-        #resumenContainer {
+        #resumen {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 30px 0px rgba(150, 147, 147, 0.6);
             border-radius: 15px;
-            background-color: rgba(243, 243, 243, 0.815);
-            height: 90%;
-            padding: 10px 10px 0px 10px;
-        }
+            height: 100%;
+            padding: 20px;
+            position: static;
 
-        .resumenProductos {
-            height: 53%;
-            border-top: 2px solid rgba(128, 128, 128, 0.363);
-            border-radius: 8px;
-
-            .resumenTitulo {
-                margin-top: 20px;
-            }
-        }
-
-        .totales {
-            height: 40%;
-            border-top: 2px solid rgba(128, 128, 128, 0.363);
-            border-radius: 8px;
-
-            .totalTitulo {
-                margin-top: 20px;
+            #resumenContainer {
+                border-radius: 15px;
+                background-color: rgba(243, 243, 243, 0.815);
+                height: 80%;
+                padding: 10px 10px 0px 10px;
             }
 
-            .precioFinal {
-                margin-top: 5px;
-                font-weight: bolder;
-                font-size: larger;
-            }
-        }
+            .resumenProductos {
+                height: 53%;
+                border-top: 2px solid rgba(128, 128, 128, 0.363);
+                border-radius: 8px;
 
-        p {
-            margin-bottom: 1px;
+                .resumenTitulo {
+                    margin-top: 20px;
+                }
+            }
+
+            .totales {
+                height: 40%;
+                border-top: 2px solid rgba(128, 128, 128, 0.363);
+                border-radius: 8px;
+
+                .totalTitulo {
+                    margin-top: 20px;
+                }
+
+                .precioFinal {
+                    margin-top: 5px;
+                    font-weight: bolder;
+                    font-size: larger;
+                }
+            }
+
+            p {
+                margin-bottom: 1px;
+            }
+
+            .resumen {
+                display: flex;
+                justify-content: center;
+
+                .btn {
+                    margin-top: 20px;
+
+                }
+            }
         }
     }
+
 
 }
 
@@ -257,4 +281,113 @@
 
 .footer-resumen {
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.modal-content {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+
+
+    .modal-body {
+        .formBack {
+            .formDatos {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+
+                input {
+                    width: 300px;
+                    margin: 5px;
+                    border-style: none;
+                    border: 2px solid rgb(179, 177, 177);
+                    border-radius: 10px;
+                    padding-left: 5px;
+                }
+
+                .formNombres {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 40px;
+
+                    .alertName {
+                        .alertIconName {
+                            .fa-triangle-exclamation {
+                                position: absolute;
+                                top: 83px;
+                                left: 360px;
+                                color: red;
+                            }
+                        }
+
+                    }
+
+                    .alertLastName {
+                        .alertIconLastName {
+                            .fa-triangle-exclamation {
+                                position: absolute;
+                                bottom: 37px;
+                                left: 360px;
+                                color: red;
+                            }
+                        }
+
+                    }
+                }
+
+                .formMedios {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: 40px;
+
+                    .alertEmail {
+                        .alertIconEmail {
+                            .fa-triangle-exclamation {
+                                position: absolute;
+                                top: 83px;
+                                right: 31px;
+                                color: red;
+                            }
+                        }
+
+                    }
+
+                    .alertTel {
+                        .alertIconTel {
+                            .fa-triangle-exclamation {
+                                position: absolute;
+                                bottom: 37px;
+                                right: 31px;
+                                color: red;
+                            }
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+            .formMensaje {
+                #mensaje {
+                    height: 200px;
+                    width: 500px;
+                    resize: none;
+                }
+            }
+        }
+
+    }
+}
+
+.modal-footer {
+    justify-content: center;
 }

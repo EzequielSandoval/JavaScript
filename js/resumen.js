@@ -23,10 +23,13 @@ let costePlan = localStorage.getItem('costePlan')
 
 
 parseInt(costePlan)
+
 //titulo de la compra
 let tituloCompra = document.querySelector(".titulosResumen")
 tituloCompra.innerHTML = `<h4>Seleccionaste: ${planTipo}</h4>`
-
+// titulo modal
+let modalTitle = document.querySelector(".modal-header")
+modalTitle.innerHTML = `<h5 class="modal-title" id="formModal">Contacto por: ${planTipo}</h5>`
 // Seleccion de meses
 let inputDuracion1 = document.getElementById("duracion1")
 let inputDuracion2 = document.getElementById("duracion2")
@@ -39,7 +42,7 @@ inputDuracion1.onchange = () => {
     totalDescuentos = 0
     codigoDescuento = 0
     updateResumen();
-    
+
 };
 inputDuracion2.onchange = () => {
     duracion = 6;
@@ -133,7 +136,7 @@ let inputCode = document.getElementById("codDesc")
 
 
 codDesc.onclick = () => {
-    
+
     if (inputCode.value == "cybermonday") {
         Swal.fire({
             title: 'Codigo "cybermonday" aplicado',
@@ -141,10 +144,10 @@ codDesc.onclick = () => {
             showCloseButton: true,
             focusConfirm: false,
             confirmButtonText: 'OK',
-            
+
         })
         codigoDescuento = desc25(calculoTotal)
-        
+
     } else if (inputCode.value == "hFnfqu5") {
         codigoDescuento = desc50(calculoTotal)
         Swal.fire({
@@ -182,6 +185,19 @@ function updateResumen() {
     /*final*/
     precioFinal = calculoTotal - totalDescuentos
 
+
+    // Resumen: 
+
+    let resumenVisible = document.getElementById("resumenVisible")
+    resumenVisible.style.position = "relative";
+    resumenVisible.innerHTML = `<div id="resumen">
+                                    <h4>Resumen:</h4>
+                                    <div id="resumenContainer">
+                                        <div class="resumenProductos"></div>
+                                        <div class="totales"></div>
+                                    </div>
+                                    <div class="resumen"></div> 
+                                </div>`
     // ----------------------
     const resumen = []
     class Resumen {
@@ -255,7 +271,94 @@ function updateResumen() {
     }
     // ----------------------
 
+
+
+    // BTN  finalizar compra 
+    let btnFin = document.querySelector(".resumen")
+    btnFin.innerHTML = ` <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#formularioModal">Finalizar Compra</button>`
 }
 
+
+
+let contacto = document.getElementById('enviar')
+contacto.onclick = () => {
+    contactar();
+    function contactar() {
+
+        // EmailJS api 
+        const nombre = document.getElementById('nombre')
+        const apellido = document.getElementById('apellido')
+        const email = document.getElementById('email')
+        const tel = document.getElementById('tel')
+
+        if ((nombre.value == '') || (apellido.value == '') || (email.value == '') || (tel.value == '')) {
+            let alertName = document.querySelector('.alertIconName')
+            alertName.innerHTML = ` 
+                                <i class="fa-solid fa-triangle-exclamation "></i>
+                                  `
+            let alertLastName = document.querySelector('.alertIconLastName')
+            alertLastName.innerHTML = `
+                                <i class="fa-solid fa-triangle-exclamation "></i>
+                                      `
+            let alertEmail = document.querySelector('.alertIconEmail')
+            alertEmail.innerHTML = `
+                                 <i class="fa-solid fa-triangle-exclamation "></i>
+                                   `
+            let alertTel = document.querySelector('.alertIconTel')
+            alertTel.innerHTML = `
+                                <i class="fa-solid fa-triangle-exclamation "></i>
+                                `
+        } else {
+            let bntEnviar = document.getElementById("enviar")
+            bntEnviar.innerHTML = `
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            `
+            var params = {
+                service_id: 'service_sha5pl4',
+                template_id: 'template_371vbmm',
+                user_id: 'KxcWOki9vdJSmKcrk',
+                template_params: {
+                    nombre: nombre.value,
+                    apellido: apellido.value,
+                    email: email.value,
+                    tel: tel.value
+                }
+            };
+
+            let headers = {
+                'Content-type': 'application/json'
+            };
+
+            let options = {
+                method: 'POST',
+                headers: headers,
+                body: JSON.stringify(params)
+            };
+
+            fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+                .then((httpResponse) => {
+                    if (httpResponse.ok) {
+                        console.log('Correo enviado');
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Enviado!. Nos contactaremos a la brevedad',
+                            showConfirmButton: false,
+                        })
+                        setTimeout(() => { window.location.href = "../index.html"; }, 3000);
+
+                    } else {
+                        return httpResponse.text()
+                            .then(text => Promise.reject(text));
+                    }
+                })
+                .catch((error) => {
+                    console.log('OCURRO ALGO INESPERADO: ' + error);
+                });
+        }
+    }
+
+}
 
 

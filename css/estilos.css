@@ -520,7 +520,7 @@ body {
   margin: 10px;
 }
 
-footer {
+.footer {
   padding-top: 20px;
   color: white;
   display: flex;
@@ -528,32 +528,32 @@ footer {
   background-color: #dc2f02;
   height: 150px;
 }
-footer .copy {
+.footer .copy {
   margin-left: 30%;
   height: 100%;
   width: 40%;
   text-align: center;
 }
-footer .copy .copyDesc {
+.footer .copy .copyDesc {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-footer .copy .copyDesc h5 {
+.footer .copy .copyDesc h5 {
   padding-top: 20px;
 }
-footer .copy .copyDesc h6 {
+.footer .copy .copyDesc h6 {
   padding-top: 15px;
 }
-footer .redes {
+.footer .redes {
   height: 100%;
   width: 30%;
 }
-footer .redes h5 {
+.footer .redes h5 {
   padding-top: 20px;
   text-align: center;
 }
-footer .redes .redesIcons {
+.footer .redes .redesIcons {
   background-color: white;
   text-align: center;
   font-size: 35px;
@@ -563,38 +563,38 @@ footer .redes .redesIcons {
   height: 40%;
   width: 70%;
 }
-footer .redes .redesIcons .fab {
+.footer .redes .redesIcons .fab {
   padding-top: 10px;
   padding: 2%;
 }
-footer .redes .redesIcons .fa-linkedin {
+.footer .redes .redesIcons .fa-linkedin {
   color: #0a66c2;
 }
-footer .redes .redesIcons .fa-linkedin:hover {
+.footer .redes .redesIcons .fa-linkedin:hover {
   color: #15b8e0;
 }
-footer .redes .redesIcons .fa-facebook-square {
+.footer .redes .redesIcons .fa-facebook-square {
   color: #4267B2;
 }
-footer .redes .redesIcons .fa-facebook-square:hover {
+.footer .redes .redesIcons .fa-facebook-square:hover {
   color: #898F9C;
 }
-footer .redes .redesIcons .fa-twitter-square {
+.footer .redes .redesIcons .fa-twitter-square {
   color: #1DA1F2;
 }
-footer .redes .redesIcons .fa-twitter-square:hover {
+.footer .redes .redesIcons .fa-twitter-square:hover {
   color: #14171A;
 }
-footer .redes .redesIcons .fa-youtube-square {
+.footer .redes .redesIcons .fa-youtube-square {
   color: #FF0000;
 }
-footer .redes .redesIcons .fa-youtube-square:hover {
+.footer .redes .redesIcons .fa-youtube-square:hover {
   color: #282828;
 }
-footer .redes .redesIcons .fa-instagram-square {
+.footer .redes .redesIcons .fa-instagram-square {
   color: #833AB4;
 }
-footer .redes .redesIcons .fa-instagram-square:hover {
+.footer .redes .redesIcons .fa-instagram-square:hover {
   color: #E1306C;
 }
 
@@ -620,6 +620,9 @@ footer .redes .redesIcons .fa-instagram-square:hover {
   border-radius: 15px;
   width: 60%;
   height: 450px;
+  margin: auto;
+  position: relative;
+  z-index: 7;
 }
 .compraContainer .compra .resumen-body {
   margin: auto;
@@ -765,43 +768,58 @@ footer .redes .redesIcons .fa-instagram-square:hover {
   background-color: #f48c06;
   color: white;
 }
-.compraContainer #resumen {
+.compraContainer #resumenVisible {
+  height: 650px;
+  width: 25%;
+  padding: 20px;
+  margin: auto;
+  position: absolute;
+  z-index: 6;
+}
+.compraContainer #resumenVisible #resumen {
   background-color: white;
   box-shadow: 0px 0px 30px 0px rgba(150, 147, 147, 0.6);
   border-radius: 15px;
-  height: 600px;
-  width: 25%;
+  height: 100%;
   padding: 20px;
+  position: static;
 }
-.compraContainer #resumen #resumenContainer {
+.compraContainer #resumenVisible #resumen #resumenContainer {
   border-radius: 15px;
   background-color: rgba(243, 243, 243, 0.815);
-  height: 90%;
+  height: 80%;
   padding: 10px 10px 0px 10px;
 }
-.compraContainer #resumen .resumenProductos {
+.compraContainer #resumenVisible #resumen .resumenProductos {
   height: 53%;
   border-top: 2px solid rgba(128, 128, 128, 0.363);
   border-radius: 8px;
 }
-.compraContainer #resumen .resumenProductos .resumenTitulo {
+.compraContainer #resumenVisible #resumen .resumenProductos .resumenTitulo {
   margin-top: 20px;
 }
-.compraContainer #resumen .totales {
+.compraContainer #resumenVisible #resumen .totales {
   height: 40%;
   border-top: 2px solid rgba(128, 128, 128, 0.363);
   border-radius: 8px;
 }
-.compraContainer #resumen .totales .totalTitulo {
+.compraContainer #resumenVisible #resumen .totales .totalTitulo {
   margin-top: 20px;
 }
-.compraContainer #resumen .totales .precioFinal {
+.compraContainer #resumenVisible #resumen .totales .precioFinal {
   margin-top: 5px;
   font-weight: bolder;
   font-size: larger;
 }
-.compraContainer #resumen p {
+.compraContainer #resumenVisible #resumen p {
   margin-bottom: 1px;
+}
+.compraContainer #resumenVisible #resumen .resumen {
+  display: flex;
+  justify-content: center;
+}
+.compraContainer #resumenVisible #resumen .resumen .btn {
+  margin-top: 20px;
 }
 
 .swal2-styled.swal2-confirm {
@@ -814,6 +832,75 @@ footer .redes .redesIcons .fa-instagram-square:hover {
 
 .footer-resumen {
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.modal-content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+.modal-content .modal-body .formBack .formDatos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.modal-content .modal-body .formBack .formDatos input {
+  width: 300px;
+  margin: 5px;
+  border-style: none;
+  border: 2px solid #b3b1b1;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.modal-content .modal-body .formBack .formDatos .formNombres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+.modal-content .modal-body .formBack .formDatos .formNombres .alertName .alertIconName .fa-triangle-exclamation {
+  position: absolute;
+  top: 83px;
+  left: 360px;
+  color: red;
+}
+.modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
+  position: absolute;
+  bottom: 37px;
+  left: 360px;
+  color: red;
+}
+.modal-content .modal-body .formBack .formDatos .formMedios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 40px;
+}
+.modal-content .modal-body .formBack .formDatos .formMedios .alertEmail .alertIconEmail .fa-triangle-exclamation {
+  position: absolute;
+  top: 83px;
+  right: 31px;
+  color: red;
+}
+.modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
+  position: absolute;
+  bottom: 37px;
+  right: 31px;
+  color: red;
+}
+.modal-content .modal-body .formBack .formMensaje #mensaje {
+  height: 200px;
+  width: 500px;
+  resize: none;
+}
+
+.modal-footer {
+  justify-content: center;
 }
 
 /* Celulares */
@@ -985,22 +1072,22 @@ footer .redes .redesIcons .fa-instagram-square:hover {
     margin: auto;
   }
 
-  footer {
+  .footer {
     flex-direction: column;
     height: 55vh;
   }
-  footer .copy {
+  .footer .copy {
     height: 30%;
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes {
+  .footer .redes {
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes .redesIcons {
+  .footer .redes .redesIcons {
     width: 250px;
     height: 55px;
   }
@@ -1192,22 +1279,22 @@ footer .redes .redesIcons .fa-instagram-square:hover {
     margin: auto;
   }
 
-  footer {
+  .footer {
     flex-direction: column;
     height: 55vh;
   }
-  footer .copy {
+  .footer .copy {
     height: 30%;
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes {
+  .footer .redes {
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes .redesIcons {
+  .footer .redes .redesIcons {
     width: 250px;
     height: 55px;
   }
@@ -1389,22 +1476,22 @@ footer .redes .redesIcons .fa-instagram-square:hover {
     margin: auto;
   }
 
-  footer {
+  .footer {
     flex-direction: column;
     height: 55vh;
   }
-  footer .copy {
+  .footer .copy {
     height: 30%;
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes {
+  .footer .redes {
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes .redesIcons {
+  .footer .redes .redesIcons {
     width: 250px;
     height: 55px;
   }
@@ -1581,22 +1668,22 @@ footer .redes .redesIcons .fa-instagram-square:hover {
     margin: auto;
   }
 
-  footer {
+  .footer {
     flex-direction: column;
     height: 55vh;
   }
-  footer .copy {
+  .footer .copy {
     height: 30%;
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes {
+  .footer .redes {
     width: 80%;
     height: 50%;
     margin: auto;
   }
-  footer .redes .redesIcons {
+  .footer .redes .redesIcons {
     width: 250px;
     height: 55px;
   }
@@ -1609,5 +1696,18 @@ footer .redes .redesIcons .fa-instagram-square:hover {
   /*fin resumen*/
 }
 /*fin pantallas medianas */
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    position: relative;
+    z-index: 1;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
