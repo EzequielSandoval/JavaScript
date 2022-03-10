@@ -281,40 +281,43 @@ function updateResumen() {
 
 
 let contacto = document.getElementById('enviar')
-contacto.onclick = () => {
-    contactar();
-    function contactar() {
 
-        // EmailJS api 
-        const nombre = document.getElementById('nombre')
-        const apellido = document.getElementById('apellido')
-        const email = document.getElementById('email')
-        const tel = document.getElementById('tel')
+contacto.addEventListener('click', contactar);
+function contactar() {
 
-        if ((nombre.value == '') || (apellido.value == '') || (email.value == '') || (tel.value == '')) {
-            let alertName = document.querySelector('.alertIconName')
-            alertName.innerHTML = ` 
+    // EmailJS api 
+    const nombre = document.getElementById('nombre')
+    const apellido = document.getElementById('apellido')
+    const email = document.getElementById('email')
+    const tel = document.getElementById('tel')
+
+    if ((nombre.value == '') || (apellido.value == '') || (email.value == '') || (tel.value == '')) {
+        let alertName = document.querySelector('.alertIconName')
+        alertName.innerHTML = ` 
                                 <i class="fa-solid fa-triangle-exclamation "></i>
                                   `
-            let alertLastName = document.querySelector('.alertIconLastName')
-            alertLastName.innerHTML = `
+        let alertLastName = document.querySelector('.alertIconLastName')
+        alertLastName.innerHTML = `
                                 <i class="fa-solid fa-triangle-exclamation "></i>
                                       `
-            let alertEmail = document.querySelector('.alertIconEmail')
-            alertEmail.innerHTML = `
+        let alertEmail = document.querySelector('.alertIconEmail')
+        alertEmail.innerHTML = `
                                  <i class="fa-solid fa-triangle-exclamation "></i>
                                    `
-            let alertTel = document.querySelector('.alertIconTel')
-            alertTel.innerHTML = `
+        let alertTel = document.querySelector('.alertIconTel')
+        alertTel.innerHTML = `
                                 <i class="fa-solid fa-triangle-exclamation "></i>
                                 `
-        } else {
-            let bntEnviar = document.getElementById("enviar")
-            bntEnviar.innerHTML = `
-            <div class="spinner-border text-success" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-            `
+    } else {
+        // let bntEnviar = document.getElementById("enviar")
+        const procesarPago = document.getElementById('procesar-pago')
+        procesarPago.addEventListener('submit', function (event){
+            event.preventDefault();
+            contacto.innerHTML = `
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                `
             var params = {
                 service_id: 'service_sha5pl4',
                 template_id: 'template_371vbmm',
@@ -356,9 +359,10 @@ contacto.onclick = () => {
                 .catch((error) => {
                     console.log('OCURRO ALGO INESPERADO: ' + error);
                 });
-        }
+        })
     }
 
 }
+
 
 

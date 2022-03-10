@@ -141,7 +141,7 @@
                         <button type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="">
+                        <form id="procesar-pago">
                             <legend>Complete los datos de contacto:</legend>
                             <div class="formBack">
                                 <div class="formDatos">
@@ -149,45 +149,38 @@
                                         <div class="alertName">
                                             <input type="text" name="nombre" id="nombre" required placeholder=" Nombre">
                                             <div class="alertIconName">
-                                                
+                            
                                             </div>
                                         </div>
-
                                         <div class="alertLastName">
                                             <input type="text" name="apellido" id="apellido" required
                                                 placeholder=" Apellido">
                                             <div class="alertIconLastName">
-
                                             </div>
                                         </div>
-
                                     </div>
                                     <div class="formMedios">
-
                                         <div class="alertEmail">
                                             <input type="email" name="email" id="email" required placeholder=" Email">
                                            <div class="alertIconEmail">
-
                                            </div>
-                                            <!-- <i class="fa-solid fa-triangle-exclamation" ></i> -->
                                         </div>
                                         <div class="alertTel">
                                             <input type="tel" name="tel" id="tel" required placeholder=" Telefono">
                                             <div class="alertIconTel">
-
                                             </div>
-                                            <!-- <i class="fa-solid fa-triangle-exclamation" ></i> -->
                                         </div>
 
                                     </div>
                                 </div>
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="submit" class="btn btn-success" id="enviar">Enviar</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-success" id="enviar">Enviar</button>
-                    </div>
+                   
                 </div>
             </div>
         </div>
