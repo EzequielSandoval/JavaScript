@@ -873,7 +873,7 @@ body {
 }
 .modal-content .modal-body .formBack .formDatos .formNombres .alertLastName .alertIconLastName .fa-triangle-exclamation {
   position: absolute;
-  bottom: 37px;
+  bottom: 110px;
   left: 360px;
   color: red;
 }
@@ -891,7 +891,7 @@ body {
 }
 .modal-content .modal-body .formBack .formDatos .formMedios .alertTel .alertIconTel .fa-triangle-exclamation {
   position: absolute;
-  bottom: 37px;
+  bottom: 110px;
   right: 31px;
   color: red;
 }

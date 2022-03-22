@@ -291,19 +291,23 @@ function contactar() {
     const email = document.getElementById('email')
     const tel = document.getElementById('tel')
 
-    if ((nombre.value == '') || (apellido.value == '') || (email.value == '') || (tel.value == '')) {
+    if (nombre.value == '') {
         let alertName = document.querySelector('.alertIconName')
         alertName.innerHTML = ` 
                                 <i class="fa-solid fa-triangle-exclamation "></i>
                                   `
+    } else if (apellido.value == '') {
         let alertLastName = document.querySelector('.alertIconLastName')
         alertLastName.innerHTML = `
                                 <i class="fa-solid fa-triangle-exclamation "></i>
                                       `
+    } else if (email.value == '') {
         let alertEmail = document.querySelector('.alertIconEmail')
         alertEmail.innerHTML = `
                                  <i class="fa-solid fa-triangle-exclamation "></i>
                                    `
+    } else if (tel.value == '') {
+
         let alertTel = document.querySelector('.alertIconTel')
         alertTel.innerHTML = `
                                 <i class="fa-solid fa-triangle-exclamation "></i>
@@ -311,7 +315,7 @@ function contactar() {
     } else {
         // let bntEnviar = document.getElementById("enviar")
         const procesarPago = document.getElementById('procesar-pago')
-        procesarPago.addEventListener('submit', function (event){
+        procesarPago.addEventListener('submit', function (event) {
             event.preventDefault();
             contacto.innerHTML = `
                 <div class="spinner-border text-success" role="status">
@@ -360,8 +364,9 @@ function contactar() {
                     console.log('OCURRO ALGO INESPERADO: ' + error);
                 });
         })
-    }
 
+
+    }
 }
 
 
